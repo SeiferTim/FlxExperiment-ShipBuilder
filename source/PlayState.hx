@@ -107,7 +107,7 @@ class PlayState extends FlxState
 			_bigShip = FlxDestroyUtil.destroy(_bigShip);
 		}
 		_ship = new Ship();
-		_ship.generate(Std.parseInt('0x' + _seed.text));
+		_ship.generate(Std.parseInt('0x' + _seed.text), Std.parseInt('0x' + _colorSeed.text));
 		_ship.setPosition(_shipBack.x + 3, _shipBack.y + 3);
 		add(_ship);
 		_bigShip = new FlxTilemap();
